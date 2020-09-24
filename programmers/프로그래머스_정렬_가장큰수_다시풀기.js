@@ -16,6 +16,7 @@ class Solution {
 			}
 		});
 		
+		// 제일 큰 수가 0인 경우는 더 확인할 필요없이 early return..!
 		if(arr[0].startsWith("0")) return "0";
 		for(int i=0; i<arr.length; i++) answer += arr[i];
 		return answer;
