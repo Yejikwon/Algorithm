@@ -14,6 +14,8 @@ public class Main {
 			map.put(now, now);
 		}
 		
-		map.forEach((key, value)->System.out.println(key));
+		StringBuilder sb = new StringBuilder();
+		map.forEach((key, value)->sb.append(key+"\n"));
+		System.out.println(sb);
 	}
 }
